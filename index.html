@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image manipulation in javascript</title>
+    <!-- skelton css -->
+    <link rel="stylesheet" href="./css/skeleton.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/fontawesome.min.css"
+        integrity="sha512-kJ30H6g4NGhWopgdseRb8wTsyllFUYIx3hiUwmGAkgA9B/JbzUBDQVr2VVlWGde6sdBVOG7oU8AL35ORDuMm8g=="
+        crossorigin="anonymous" />
+    <!-- animate.css -->
+    <link rel="stylesheet" href="./css/animate.min.css" />
+    <!-- custom style -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="u-full-width" id="title">
+        <h3>Give Images Filter </h3>
+        <nav class="nav-links">
+            <a href="https://github.com/ps173"> Contact me </a>
+        </nav>
+    </header>
+    <br><br>
+    <!-- input to add image -->
+    <div class="container">
+        <label for="image" id="imglabel">Add Image</label>
+        <input type="file" id="image" name="image" accept="image/*" style="visibility: hidden;">
+    </div>
+    <!-- CANVAS -->
+    <div class="container">
+        <!-- <img src="./test/goodimage.jpg" alt=""> -->
+        <canvas class="u-full-width" id="cvs"></canvas>
+    </div>
+    <br><br>
+    <!-- buttons holder -->
+    <div class="container">
+        <button class="button-primary" id="button" name="red">red</button>
+        <button class="button-primary" id="button" name="green">green</button>
+        <button class="button-primary" id="button" name="blue" >blue</button>
+        <button class="button-primary" id="button" name="purple" >purple</button>
+        <button class="button-primary" id="button" name="cyan" >cyan</button>
+        <button class="button-primary" id="button" name="yellow" >yellow</button>
+        <button class="button-primary" id="button" name="grayscale" >grayscale</button>
+        <button class="button-primary" id="button" name="remove-filters" >remove-filters</button>
+        <button class="u-full-width button-primary" id="save" >
+            Download
+        </button>
+    </div>
+    <!-- footer -->
+    <footer>
+        <div class="container">
+		 Testing purposes only
+        </div>
+    </footer>
+    <!-- scripts -->
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
